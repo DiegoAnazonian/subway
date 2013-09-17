@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
 		<title>Relevamiento sobre Metrovias</title>
+		<!-- Código del Icono -->
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="Icons/barras16x16.png">
+		
 		<link rel="stylesheet" type="text/css" href="CSS/main.css">
 		<script src="JS/libs/jquery-2.0.2.min.js"></script>
 
@@ -43,6 +46,30 @@
 				isThisaText(usuario.val());
 			})
 
+			$("#linea_A").click(function(){
+				document.body.style.backgroundImage="url('background/blue.png')";
+			})
+
+			$("#linea_B").click(function(){
+				document.body.style.backgroundImage="url('background/red.png')";	
+			})
+
+			$("#linea_C").click(function(){
+				document.body.style.backgroundImage="url('background/strongBlue.png')"	
+			})
+
+			$("#linea_D").click(function(){
+				document.body.style.backgroundImage="url('background/green.png')"	
+			})
+
+			$("#linea_E").click(function(){
+				document.body.style.backgroundImage="url('background/violet.png')"	
+			})
+
+			$("#linea_H").click(function(){
+				document.body.style.backgroundImage="url('background/yellow.png')"	
+			})
+
 		})
 
 		</script>
@@ -53,7 +80,7 @@
 
 	
 	<div id="gob_header">
-	
+	<img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Buenos_Aires_Metro_logo.png/150px-Buenos_Aires_Metro_logo.png" alt="W3Schools.com" id = "subte_logo"><h1 id="tittle_subte">Relevamiento del Subte</h1><div>¿ Cómo soles viajar ?</div>
 	</div>
 		<div id="header">
 			<div class ="header_icons">

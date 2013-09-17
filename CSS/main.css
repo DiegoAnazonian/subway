@@ -7,8 +7,22 @@
 
 }
 
+#subte_logo {
+	width: 50px;
+	height: 50px;
+}
+
+#tittle_subte {
+	padding ; 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
 body {
-	background-image: url('../background/blue.png');
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	background-image: url('../background/red.png');
 	background-color: #FAFAFA;
 	background-repeat: repeat-x;
 }
@@ -20,11 +34,19 @@ body {
 	font-style:italic;
 }
 
+#subte_logo {
+	float: left;
+
+	width: 60px;
+	height: 60px;
+}
+
 #gob_header {
 	background: #FFD300;
 	height: 59px;
-	padding-top: 20px;
-	padding-bottom: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 103px;
 	width: 100%;
 }
 .social-icons {

@@ -6,6 +6,8 @@ validateDni = function (_number){
 	}
 }
 
+
+
 checkEmptyBox = function (_user , _outPutText){
 	if(_user.val() == ""){
 		_user.css("color","grey");
