@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Relevamiento sobre Metrovias</title>
+		<link rel="stylesheet" type="text/css" href="CSS/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+		<script type="text/javascript" src="JS/validationFunctions.js"></script>
+		<script type="text/javascript">
+		
+		$(document).ready(function() {
+			var usuario = $("#usuario");
+			var apellido = $("#apellido");
+			var dni = $("#dni");
+
+			usuario.click(function(){
+				normalizeText(usuario);
+				clearText(usuario,"Nombre Usuario");
+				checkEmptyBox(apellido,"Apellido");
+				checkEmptyBox(dni,"DNI");
+				}) 
+			
+			apellido.click(function(){
+				normalizeText(apellido);
+				clearText(apellido,"Apellido");
+				checkEmptyBox(usuario,"Nombre Usuario");
+				checkEmptyBox(dni,"DNI");
+			})
+
+			dni.click(function(){
+				normalizeText(dni);
+				clearText(dni,"DNI");
+				checkEmptyBox(usuario,"Nombre Usuario");
+				checkEmptyBox(apellido,"Apellido");
+			})
+
+			$("#siguiente1").click(function(){
+				validateDni(dni.val());
+				isThisaText(apellido.val());
+				isThisaText(usuario.val());
+			})
+
+		})
+
+		</script>
+
+	</head>
+ 
+<body class="metrovias" >
+
+	
+	<div id="gob_header">
+	
+	</div>
+		<div id="header">
+			<div class ="header_icons">
+				<div class ="social-icons">
+					<a href="https://twitter.com/YOUR_USER_NAME"><img src="Pictures/twitter.png" class="social-i" alt="Twitter" /></a>
+  					<a href="http://www.facebook.com/YOUR_FB_IDENTIFIER"><img src="Pictures/face.png" class="social-i" alt="Facebook" /></a>
+				</div>
+				<div class = "subway-lines">
+					<img id="linea_A"  src="Pictures/Linea_A.png">
+					<img id="linea_B" src="Pictures/Linea_B.png">
+					<img id="linea_C" src="Pictures/Linea_C.png">
+					<img id="linea_D" src="Pictures/Linea_D.png">
+					<img id="linea_E" src="Pictures/Linea_E.png">
+					<img id="linea_H" src="Pictures/Linea_H.png">	
+					
+				</div>
+
+			</div>
+		</div>
+
+			
+			<div id="infoContainer">
+			<form>
+ 			 <input type="text" class="myInputs" id="usuario" value="Nombre Usuario"><br>
+ 			 <input type="text" class="myInputs" id="apellido"  value="Apellido"><br>
+ 			 <input type="text" class="myInputs" id="dni" value="DNI"><br><br>
+ 			 <input type="button" style="width:80" value="Siguiente" id="siguiente1" >
+			</form>
+			</div>
+			
+</body>
+
+</html>
