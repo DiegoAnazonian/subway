@@ -7,6 +7,15 @@
 
 }
 
+.main-container {
+	width: 100%;
+	margin-bottom:20px;
+	margin-top: 10px;
+	position: relative;
+	zoom : 1; 
+	height: 500px;
+}
+
 #subte_logo {
 	width: 50px;
 	height: 50px;
@@ -22,7 +31,7 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
-	background-image: url('../background/red.png');
+	background-image: url('../background/violet.png');
 	background-color: #FAFAFA;
 	background-repeat: repeat-x;
 }
@@ -43,7 +52,7 @@ body {
 
 #gob_header {
 	background: #FFD300;
-	height: 59px;
+	height: 70px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 103px;
@@ -79,7 +88,7 @@ body {
 	width: 100%;
 	border: none;
 	margin: 0;
-	padding: 0;
+	padding: 0px, 2px, 2px, 2px;
 	height: 34px;
 }
 
